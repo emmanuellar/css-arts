@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .bus-cont{
+        width:1000px;
+        height:500px;
+        margin:0 auto;
+        position:relative;
+        /* background-color:green; */
+        padding-top:50px;
+    }
+    .bus-up{
+        height:180px;
+        width:800px;
+        background-color:rgb(252, 205, 52);
+        border-radius:100px 100px 0px 0px;
+        border-bottom:2px solid white;
+        display:flex;
+        margin: auto;
+    }
+    .bus-up::after{
+        content:"";
+        height:2.5px;
+        width:800px;
+        background-color:rgba(63, 23, 23, 0.87);
+        position:absolute;
+        margin:150px auto;
+        display:flex;
+    }
+    .bus-window{
+        height:65px;
+        width:120px;
+        background-color:rgb(16, 214, 214);
+        display:inline-flex;
+        margin:70px auto
+    }
+    .bus-window::after{
+        content:"";
+        height:3px;
+        width:65px;
+        background-color:#000;
+        margin:48px auto;
+    }
+    .human::after{
+        content:"";
+        height:20px;
+        width:50px;
+        margin:35px auto;
+        border-radius:50% 50% 0 0;
+        background-color:black;
+    }
+
+/* STEP ONE OVER AND OUT */
+
+.bus-mid{
+    height:200px;
+    width:800px;
+    background-color:rgb(252, 205, 52);
+    display:flex;
+    margin: 0 auto;   
+}
+.bus-mid::after{
+    content:"";
+    height:60px;
+    width:130px;
+    border-radius:120px 120px 0 0;
+    background-color:rgb(83, 37, 7);
+    border:2px solid #000 ;
+    margin-top:137px;
+    margin-left:35%;
+}
+.bus-mid::before{
+    content:"";
+    height:60px;
+    width:130px;
+    border-radius:120px 120px 0 0;
+    background-color:rgb(83, 37, 7);
+    border:2px solid #000 ;
+    margin-top:137px;
+    margin-left:15%;
+}
+.bus-tire{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background-color:#fff;
+    margin-top:150px;
+    margin-left:131px;
+    position:absolute;
+    border:30px solid black;
+}
+.bus-tire2{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background-color:#fff;
+    margin-top:150px;
+    margin-left:545px;
+    position:absolute;
+    border:30px solid black;
+}
+.text{
+    display:flex;
+    margin-left:25%;
+    position:absolute;
+    /* background-color: red; */
+    font-size:0.8rem;
+    font-weight:600;
+}
+.bus-decor{
+    height:2px;
+    width:720px;
+    position:absolute;
+    background-color: #000;
+    margin-left:80px;
+    margin-top:50px;
+}
+
+.bus-decor2{
+    height:200px;
+    width:10px;
+    position:absolute;
+    background-color: #000;
+    margin-left:0px;
+}
+.bus-decor2::after{
+    content:"";
+    height:200px;
+    width:30px;
+    position:absolute;
+    background-color: #000;
+    margin-left:60px;
+}
+
+</style>
+<body>
+    <div class="bus-cont">
+        <div class="bus-up">
+            <div class="text">
+                <h1>God No Go Shame Us</h1>
+            </div>
+            <div class="bus-window human"></div>
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+        </div>
+        <div class="bus-mid">
+            <div class="bus-smaller-window-driver"></div> 
+            <div class="bus-decor"></div>
+            <div class="bus-decor2"></div>
+            <div class="bus-tire"></div>
+            <div class="bus-tire2"></div>
+        </div>
+    </div>
+</body>
+</html>

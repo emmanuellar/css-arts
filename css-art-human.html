@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .head-cont{
+            position:relative;
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            /* background-color: black; */
+        }
+        .face{
+            height:200px;
+            width:220px;
+            background-color:rgb(248, 202, 141);
+            position: relative;
+            margin:0 auto;
+            top:20%;
+            border-radius: 85px 75px 90px 90px;
+            z-index:9;
+        }
+        .face::before{
+            content:'';
+            height:70px;
+            width:100px;
+            background-color:#000;
+            box-shadow: 2px 4px rgba(128, 128, 128, 0.623);
+            position: absolute;
+            margin:0 auto;
+            top:-20px;
+            transform: rotate(-15deg);
+            border-radius: 50%;
+            z-index:100;
+        }
+        .faces{
+            height:250px;
+            width:250px;
+            background-color:#000;
+            position:relative;
+            display:block;
+            top:60%;
+            z-index:-1;
+            margin:0 auto;
+            border-radius: 95px 85px 100px 100px;
+        }
+        .eyes{
+            width:60px;
+            height:30px;
+            border-radius:150px 150px 0 0;
+            background-color:#fff;
+            margin:-40px 0 0 160px;
+            z-index:500;
+            position:relative;  
+            padding-top:5px 
+        }
+        .eyes::after{
+            content:'';
+            width:12px;
+            height:12px;
+            border: 8px solid rgb(211, 82, 7);
+            border-radius:50%;
+            background-color:#000;
+            margin:0 auto;
+            z-index:500;
+            display:block;
+            position:relative;   
+        }
+        .eyes2{
+            width:60px;
+            height:30px;
+            border-radius:150px 150px 0 0;
+            background-color:#fff;
+            margin:-40px 0 0 270px;
+            z-index:500;
+            position:relative;
+            padding-top:5px;  
+        }
+        .eyes2::after{
+            content:'';
+            width:12px;
+            height:12px;
+            border: 8px solid rgb(211, 82, 7);
+            border-radius:50%;
+            background-color:#000;
+            margin:0 auto;
+            z-index:500;
+            display:block;
+            position:relative;   
+        }
+        .mouth{
+            width:15px;
+            height:5px;
+            border-radius:0 0 150px 150px;
+            background-color:rgb(85, 82, 82);
+            margin:20px auto 0 auto;
+            z-index:500;
+            position:relative;
+            padding-top:5px;  
+        }
+        .mouth::after{
+            content:'';
+            display:block;
+            width:55px;
+            height:1px;
+            border-radius:0 0 150px 150px;
+            background-color:rgb(121, 8, 8);
+            margin:30px auto 0 -20px;
+            z-index:500;
+            position:relative;
+            padding-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head-cont">
+        <div class="faces"></div>
+        <div class="face"></div>
+        <div class="eyes"></div>
+        <div class="eyes2"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>

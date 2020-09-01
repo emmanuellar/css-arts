@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .coffee-cont{
+        width:500px;
+        height:500px;
+        margin:0 auto;
+        position:relative;
+        /* background-color:red; */
+    }
+    .coffee-cup{
+        position:relative;
+        width:250px;
+        height: 190px;
+        margin:0 auto;
+        top:50%;
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(28,14,42,1) 0%, rgba(255,255,255,1) 0%, rgba(160,153,153,1) 100%);
+        border-radius: 0 0 150px 150px;
+    }
+    .coffee-cup::before{
+        content:'';
+        display:block;
+        height:30px;
+        width:230px;
+        position:absolute;
+        border-radius:50%;
+        background:radial-gradient(circle,rgba(132, 102, 76, 1) 5%,rgba(86, 44, 8, 1) 96%);
+        top:-7px;
+        left:10px;
+        z-index:9;
+    }
+    .coffee-cup::after{
+        content:'';
+        display:block;
+        height: 45px;
+        width:242px;
+        position:absolute;
+        border-radius: 50%;
+        background-color:#cccccc;
+        top:-25px;
+        left:-1px;
+        border: 5px solid #e6e6e6;
+    }
+    .coffee-hand{
+        width:92px;
+        height:32px;
+        position:absolute;
+        background:#ffffff;
+        border-radius:32px;
+        border: 15px solid #dbdbdb;
+        left:60%;
+        top:56%;
+        z-index:-1;
+        transform:rotate(-36deg);
+    }
+    .coffee-tasse{
+        width:400px;
+        height:139px;
+        top:68%;
+        left:10%;
+        background:radial-gradient(circle, rgba(69, 69, 69, 1) 13%, rgba(176, 176, 176, 1) 45%, rgba(143, 143, 143, 1) 96%);
+        border-radius:50%;
+        position:absolute;
+        z-index:-1;
+        border:2px solid #f0f0f0;
+        box-shadow:1px 3px 0px 1px;
+    }
+    .coffee-tasse::after{
+        content:'';
+        display:block;
+        width:405px;
+        top:68%;
+        border-radius:50%;
+        height:145px;
+        background:transparent;
+        box-shadow:2px 5px 8px 3px;
+    }
+    </style>
+</head>
+<body>
+    <div class="coffee-cont">
+        <div class="coffee-cup"></div>
+        <div class="coffee-hand"></div>
+        <div class="coffee-tasse"></div>
+    </div>
+</body>
+</html>
